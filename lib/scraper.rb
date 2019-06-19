@@ -10,7 +10,7 @@ class Scraper
   end 
   
   def get_courses 
-    doc = Nokogiri::HTML::NodeSet
+    self.get_page
     doc.css(".post").first.css("h2").text
     doc.css(".post").first.css(".date").text
     doc.css(".post").first.css("p").text
