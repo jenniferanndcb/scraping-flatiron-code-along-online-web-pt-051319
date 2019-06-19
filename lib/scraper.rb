@@ -10,7 +10,7 @@ class Scraper
   end 
   
   def get_courses 
-    doc.css("h2").text
+    doc.css(".post").text
     
   end 
   
